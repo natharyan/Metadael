@@ -1,0 +1,80 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.anim-inner {
+  animation: text-clip 2.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  font-family: 'Acme', sans-serif;
+  position: relative;
+  font-size: clamp(50px, 15vw, 100px);
+  text-align: center;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  -webkit-user-select: none;
+}
+@keyframes text-clip {
+  from {
+    clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 100% 0%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+
+button {
+  position: relative;
+  display:block;
+  height: 45px;
+  width: 150px;
+  margin: 10px 7px;
+  padding: 5px 5px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: white;
+  border: 2px white solid;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px #8d5555;
+  text-transform: uppercase;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.arrow{
+  text-align:center;
+}
+
+.arrow:before{
+  content:"→";
+  position:absolute;
+  color:white;
+  left: 83%;
+  opacity: 0;
+  -webkit-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.arrow:hover:before{
+  left:84%;
+  opacity:1;
+}
+
+.arrow:hover {
+  width:170px;
+}
