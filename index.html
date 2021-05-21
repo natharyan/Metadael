@@ -1,43 +1,142 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet"> 
-    <script src="script.js"></script>
-  </head>
-  <body>
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+<head>
+  <title>Metadael | Homepage</title>
+  <link rel="shortcut icon" type="image/jpeg" href="images/metadael_favicon.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="scss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Balsamiq+Sans:wght@700&display=swap"
+    rel="stylesheet">
+  <script src="script.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+<style>
+  @media screen and (min-width: 992px) {
+  .move1{
+    margin-left: 30vw;
+  }
+  .move2{
+    right:-67vw;
+  }
+  .vert-move{
+    width: 200px;
+    height: 200px;
+  }
+  .scroll{
+    top: 230px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .move1{
+    margin-left: 18vw;
+  }
+  .move2{
+    right:-77vw;
+  }
+  .vert-move{
+    width: 180px;
+    height: 180px;
+  }
+  .scroll{
+    top: 230px;
+  }
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 461px) {
+  .move1{
+    margin-left: 30vw;
+    transform: translateX(-55%);
+    bottom: -30px;
+  }
+  .move2{
+    right: -97.7vw;
+    transform: translateX(-55%);
+    bottom: -30px;
+  }
+  .vert-move{
+    width: 150px;
+    height: 150px;
+  }
+  .row1{
+    margin-bottom: 50px;
+  }
+  .scroll{
+    top: 250px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
   <div id="container">
+    <div class="button_container1" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
 
-    <div class="container-fluid" style="height: 100vh;width:100vw;background: url('images/Metadael1.png'),#E4717A;background-repeat: no-repeat;
+    <div class="overlay1" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="competitions.html">Competitions</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--MKE TOP NAVBAR AS WELL FOR LOADING PAGE-->
+
+    <div class="container-fluid" style="height: 100vh;width:100vw;background: url('images/Metadael1.png'),#B1CABB;background-repeat: no-repeat;
                                         background-size: 400px 400px;
                                         background-attachment: fixed;
-                                        background-position: center center;margin: 0px;justify-content: center;">
-        <h1 class="anim-inner">METADAEL</h1>
-        <br><br>
-        <div class="row" style="justify-content: center;margin-top: 45vh;">
-          <div class="column">
-            <a href="covidinfo.html" style="text-decoration: none;"><button class="arrow">Covid Info</button></a>
-          </div>
-          <div class="column">
-            <button class="arrow">General</button>
-          </div>
+                                        background-position: center 35px;margin: 0px;justify-content: center;">
+      <h1 class="anim-inner">METADAEL</h1>
+      
+      <a href="#content"><div class="scroll" style="margin: auto;"></div></a>
+
+      <div class="row row1" style="position: absolute;bottom: 90px;">
+        <div class="col-lg-6" style="position: absolute;">
+            <a href="#" class="move move1" style="position: absolute;bottom: -15px;"><img class="vert-move" src="images/WhatsApp Image 2021-05-21 at 1.37.39 PM.jpeg" style="margin: auto;"></a> 
+        </div>
+        <div class="col-lg-6" style="position: absolute;">
+            <a href="#" class="move move2" style="position: absolute;bottom: -15px;"><img class="vert-move" src="images/WhatsApp Image 2021-05-21 at 1.37.41 PM.jpeg" style="margin: auto;"></a> 
+        </div>
       </div>
-      </div>
-    
+    </div>
+    <div class="container">Hello World</div>
   </div>
+      
+  <script>
+    $('#toggle').click(function () {
+      $(this).toggleClass('active');
+      $('#overlay').toggleClass('open');
+    });
+  </script>
+
 </body>
+
 </html>

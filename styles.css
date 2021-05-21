@@ -6,6 +6,7 @@ body{
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  background-color: #B1CABB;
 }
 
 .anim-inner {
@@ -15,8 +16,7 @@ body{
   font-size: clamp(50px, 15vw, 100px);
   text-align: center;
   color: white;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 180px;
   z-index: 2;
   -webkit-user-select: none;
 }
@@ -78,3 +78,27 @@ button {
 .arrow:hover {
   width:170px;
 }
+img.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+  box-shadow: 0px 0px 5px #888;
+
+}
+img.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+  transition: border-radius 1s;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+.move:hover .vert-move{
+  border-radius: 50%;
+}
+
