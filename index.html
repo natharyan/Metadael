@@ -32,6 +32,10 @@
   .scroll{
     top: 230px;
   }
+  .nav1{
+    visibility: visible;
+    position: absolute;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -47,6 +51,10 @@
   }
   .scroll{
     top: 230px;
+  }
+  .nav1{
+    visibility: hidden;
+    position: absolute;
   }
 }
 /* On screens that are 600px or less, set the background color to olive */
@@ -71,6 +79,10 @@
   .scroll{
     top: 250px;
   }
+  .nav1{
+    visibility: hidden;
+    position: absolute;
+  }
 }
 </style>
 </head>
@@ -90,6 +102,7 @@
     crossorigin="anonymous"></script>
 
   <div id="container">
+
     <div class="button_container1" id="toggle">
       <span class="top"></span>
       <span class="middle"></span>
@@ -100,20 +113,41 @@
       <nav class="overlay-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="competitions.html">Competitions</a></li>
+          <li><a href="resume.html">Build Resume</a></li>
+          <li><a href="#">Series</a></li>
+          <li><a href="#">Covid-19</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </div>
+    <nav class="navbar navbar-expand-sm navbar-light nav1" style="width: 500px;border: 4px solid black;border-top: 0px solid;border-left: 0px solid;border-radius: 0px 0px 45px 0px;">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mt-md-0" style="width: fit-content;font-family: 'Acme', sans-serif;letter-spacing: 2px;">
+          <li class="nav-item">
+            <a class="nav-link link-effect" href="#" style="color: black;">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item link-effect">
+            <a class="nav-link" href="#" style="color: black;">Build Resume<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item link-effect">
+            <a class="nav-link" href="#" style="color: black;">Series<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item link-effect">
+            <a class="nav-link" href="#" style="color: black;">Covid-19<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item link-effect">
+            <a class="nav-link" href="#" style="color: black;">About<span class="sr-only">(current)</span></a>
+          </li>
+          
+        </ul>
+        
+    </nav>
 
     <!--MKE TOP NAVBAR AS WELL FOR LOADING PAGE-->
 
     <div class="container-fluid" style="height: 100vh;width:100vw;background: url('images/Metadael1.png'),#B1CABB;background-repeat: no-repeat;
                                         background-size: 400px 400px;
                                         background-attachment: fixed;
-                                        background-position: center 35px;margin: 0px;justify-content: center;">
+                                        background-position: center 30px;margin: 0px;justify-content: center;">
       <h1 class="anim-inner">METADAEL</h1>
       
       <a href="#content"><div class="scroll" style="margin: auto;"></div></a>
