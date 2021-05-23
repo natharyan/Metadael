@@ -13,7 +13,7 @@ body{
   content:'';
   display: block;
   width: 0;
-  height: 2px;
+  height: 2.5px;
   margin: 0px;
   background:black;
   transition: width 0.8s;
@@ -116,3 +116,16 @@ img.vert-move {
   border-radius: 50%;
 }
 
+.slide-in{
+  animation: slide-in 0.5s ease forwards;
+}
+
+@keyframes slide-in{
+  from{
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  to{
+    transform: translateX(0%);
+  }
+}

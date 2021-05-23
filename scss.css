@@ -9,15 +9,15 @@ h1 {
 
 .button_container1 {
   position: fixed;
-  top: 3%;
-  right: 3%;
+  top: 20px;
+  right: 30px;
   height: 27px;
   width: 35px;
   cursor: pointer;
   z-index: 100;
   -webkit-transition: opacity .25s ease;
   transition: opacity .25s ease;
-  z-index: 99;
+  z-index: 100;
 }
 
 .button_container1:hover {
