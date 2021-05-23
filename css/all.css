@@ -41,7 +41,7 @@ body {
     --a: calc(0.28867513459 * var(--h));
     --d: calc(0.57735026919 * var(--h));
     height:var(--h);
-    width:var(--w);
+    width:var(--h);
     position:absolute;
   }
   
@@ -50,29 +50,7 @@ body {
     width:100%;
     height:100%;
     object-fit:cover;
-    /* 
-    
-     [clip-path coordinates]
-    
-      --A-F--
-     B|/   \|E    coord.
-      |\   /|       A(a/w, 0)
-      --C-D--       B(0, 50%)
-                    C(a/w, 100%)
-                    D(100% - a/w, 100%)
-                    E(100%, 50%)
-                    F(100% - a/w, 0)
-                  where a/w = 0.24999999999
-    */
-    --aw:24.99999999999%;
-    clip-path:polygon(
-      var(--aw) 0,
-      0 50%,
-      var(--aw) 100%,
-      calc(100% - var(--aw)) 100%,
-      100% 50%,
-      calc(100% - var(--aw)) 0
-    );
+    border-radius: 100%;
   }
   
   .li1:nth-of-type(1) {
@@ -109,9 +87,11 @@ body {
   .ul1 {
     filter:drop-shadow(0 0 10px hsla(0,0%,0%,0.3));
   }
-  
+  .li1{
+    transition: 0.5s ease;
+  }
   .li1:hover {
-    filter:drop-shadow(0 0 8px #888);
+    filter:drop-shadow(0 0 3px rgb(90, 89, 89));
     z-index:10;
   }
   
