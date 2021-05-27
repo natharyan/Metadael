@@ -85,14 +85,14 @@ body {
   */
   
   .ul1 {
-    filter:drop-shadow(0 0 10px hsla(0,0%,0%,0.3));
+    filter:drop-shadow(rgba(0, 0, 0, 0.06) 0px 2px 4px);
   }
   .li1{
-    transition: 0.5s ease;
+    transition: all 0.5s ease;
   }
   .li1:hover {
-    filter:drop-shadow(0 0 3px rgb(90, 89, 89));
-    z-index:10;
+    filter:drop-shadow(rgba(0, 0, 0, 0.22) 0px 19px 43px);
+    transform: translate3d(0px, -1px, 0px);
   }
   
   /*
