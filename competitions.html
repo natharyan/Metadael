@@ -1,71 +1,157 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
+
+<head>
+    <title>Metadel | Competions</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="scss.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
- 
-  </head>
-  <body>
-      
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/competitions.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/scss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Kaushan+Script&family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+<body style="background-color: #e4717a;;">
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!--
-    <div id="container">
-      <div class="button_container1" id="toggle">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <div class="button_container1" id="toggle" style="position: fixed;">
         <span class="top"></span>
         <span class="middle"></span>
         <span class="bottom"></span>
-      </div>
-      
-      <div class="overlay1" id="overlay">
-        <nav class="overlay-menu">
-          <ul>
-            <li ><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    <div class="container-fluid" style="height: 100vh;width:100vw;background: url('images/Metadael1.png'),#B1CABB;background-repeat: no-repeat;
-                                        background-size: 400px 400px;
-                                        background-attachment: fixed;
-                                        background-position: center center;margin: 0px;justify-content: center;">
-        <h1 class="anim-inner">COMPETITIONS</h1>
-        <br><br>
-        <div class="row" style="justify-content: center;margin-top: 45vh;">
-          <div class="column">
-            <a href="index.html" style="text-decoration: none;"><button class="arrow" >Home</button></a>
-          </div>
-          <div class="column">
-            <button class="arrow">General</button>
-          </div>
-      </div>
-      </div>
-    <div class="container" style="height:700px">
-      <iframe style="height: 90%;width:90%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQbmix3ZU-E-ZR1jcKbmxjTGu-DA9GFxpn3_WhGhL5UnXi6L0KAZ6metTg-wydFmmGCv8CaOkB4V7za/pubhtml?widget=true&amp;headers=false"></iframe>
     </div>
-  </div>
--->
 
-  <script>
-    $('#toggle').click(function() {
-    $(this).toggleClass('active');
-    $('#overlay').toggleClass('open');
-   });
-  </script>
+    <div class="overlay1" id="overlay" style="position: fixed;">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="all.html">Build Resume</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Covid-19</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="container">
+        <div class="container">
 
+            <br>
+            <h1 style="font-family: 'Kaushan Script', cursive;font-size: 100px;text-align: center;color: cyan;">ART
+            </h1>
+            <div class="card" style="margin-top: 50px;">
+                <div class="card-image"
+                    style="background-image:url('images/WhatsApp\ Image\ 2021-05-21\ at\ 1.37.40\ PM\ \(1\).jpeg');">
+                    <h1 style="color: black;">"--Competion Name--"</h1>
+                </div>
+                <div class="card-body">
+                    <div class="controls">
+                        <a data-action="drawer" href="#">
+                            <i class="ion-android-arrow-up up"></i>
+                            <i class="ion-android-arrow-down down"></i>
+                        </a>
+                        <a data-action="share" href="#">
+                            <i class="ion-android-share-alt"></i>
+                        </a>
+                        <a data-action="bookmark" href="#">
+                            <i class="ion-android-bookmark"></i>
+                        </a>
+                        <a data-action="favorite" href="#">
+                            <i class="ion-android-favorite"></i>
+                        </a>
+                    </div>
+                    <h1>"--Competion Name--"</h1>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 50px">
+                <div class="card-image"
+                    style="background-image:url('images/WhatsApp\ Image\ 2021-05-21\ at\ 1.37.40\ PM\ \(1\).jpeg');">
+                    <h1 style="color: black;">"--Competion Name--"</h1>
+                </div>
+                <div class="card-body">
+                    <div class="controls">
+                        <a data-action="drawer" href="#">
+                            <i class="ion-android-arrow-up up"></i>
+                            <i class="ion-android-arrow-down down"></i>
+                        </a>
+                        <a data-action="share" href="#">
+                            <i class="ion-android-share-alt"></i>
+                        </a>
+                        <a data-action="bookmark" href="#">
+                            <i class="ion-android-bookmark"></i>
+                        </a>
+                        <a data-action="favorite" href="#">
+                            <i class="ion-android-favorite"></i>
+                        </a>
+                    </div>
+                    <h1>"Competion Name--"</h1>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                </div>
+            </div>
+            <br><br><br><br>
+            <h1 style="font-family: 'Bubblegum Sans', cursive;font-size: 100px;text-align: center;color: cyan;">WRITING
+            </h1>
+            <div class="card" style="margin-top: 50px;">
+                <div class="card-image"
+                    style="background-image:url('images/WhatsApp\ Image\ 2021-05-21\ at\ 1.37.40\ PM\ \(1\).jpeg');">
+                    <h1 style="color: black;">"Competion Name--"</h1>
+                </div>
+                <div class="card-body">
+                    <div class="controls">
+                        <a data-action="drawer" href="#">
+                            <i class="ion-android-arrow-up up"></i>
+                            <i class="ion-android-arrow-down down"></i>
+                        </a>
+                        <a data-action="share" href="#">
+                            <i class="ion-android-share-alt"></i>
+                        </a>
+                        <a data-action="bookmark" href="#">
+                            <i class="ion-android-bookmark"></i>
+                        </a>
+                        <a data-action="favorite" href="#">
+                            <i class="ion-android-favorite"></i>
+                        </a>
+                    </div>
+                    <h1>"--Competion Name--"</h1>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <br>
+    <script>
+        $('body').on('click', '[data-action="drawer"]', function () {
+            $(this).closest('.card').toggleClass("active");
+        });
+    </script>
+    <script>
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+    </script>
 </body>
+
 </html>

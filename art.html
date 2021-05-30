@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Metadael | How We Can Help You</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/scss.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/art.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8121cee81a.js" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <style>
+        @media screen and (min-width: 992px) {
+            .container1 {
+                margin-top: 100px;
+            }
+        }
+
+        @media screen and (max-width: 991px) {
+            .container1 {
+                margin-top: 100px;
+            }
+        }
+
+        /* On screens that are 600px or less, set the background color to olive */
+        @media screen and (max-width: 461px) {
+            .container1 {
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body style="background: #e4717a;">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <div class="button_container1" id="toggle" style="position: fixed;">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+
+    <div class="overlay1" id="overlay" style="position: fixed;">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="all.html">Build Resume</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Covid-19</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="container">
+        <!-- card -->
+        <div class="container container1" style="width: 100%;">
+            <div class="row" style="align-items: center;justify-content: center;width: 100%;">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <a href="competitions.html" style="text-decoration: none;">
+                        <div class="card">
+
+                            <div class="icon"><i class="fas fa-lightbulb" style="font-size: 30px;"></i></div>
+                            <p class="title">Competitions</p>
+                            <p class="text">Click to see or edit your profile page.</p>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12" style="justify-content: center;">
+                    <a href="" style="text-decoration: none;">
+                        <div class="card">
+
+                            <div class="icon"><i class="fas fa-handshake" style="font-size: 30px;"></i></div>
+                            <p class="title">Partners and Promotions</p>
+                            <p class="text">Click to see or edit your profile page.</p>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12" style="justify-content: center;">
+                    <a href="" style="text-decoration: none;">
+                        <div class="card">
+
+                            <div class="icon"><i class="fas fa-chalkboard-teacher" style="font-size: 30px;"></i></div>
+                            <p class="title">Tutors and Workshops</p>
+                            <p class="text">Click to see or edit your profile page.</p>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="row" style="align-items: center;justify-content: center;width: 100%;">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <a href="" style="text-decoration: none;">
+                        <div class="card">
+
+                            <div class="icon"><i class="fas fa-industry" style="font-size: 30px;"></i></div>
+                            <p class="title">"Series"</p>
+                            <p class="text">Click to see or edit your profile page.</p>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+
+    <script>
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+    </script>
+
+
+
+</body>
+
+</html>

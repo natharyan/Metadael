@@ -107,9 +107,7 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -169,13 +167,13 @@
                                             background-size: 400px 400px;
                                             background-attachment: fixed;
                                             background-position: center 30px;margin: 0px;justify-content: center;">
-            <h1 class="anim-inner">METADAEL</h1>
+            <h1 class="anim-inner1">METADAEL</h1>
 
             <a href="all.html"><div class="scroll" style="margin: auto;"></div></a>
 
             <div class="row row1" style="position: absolute;bottom: 90px;">
               <div class="col-lg-6" style="position: absolute;">
-                <a href="#" class="move move1" style="position: absolute;bottom: -15px;"><img class="vert-move"
+                <a href="art.html" class="move move1" style="position: absolute;bottom: -15px;"><img class="vert-move"
                     src="images/WhatsApp Image 2021-05-21 at 1.37.39 PM.jpeg" style="margin: auto;"></a>
               </div>
               <div class="col-lg-6" style="position: absolute;">
@@ -186,14 +184,15 @@
           </div>
         </div>
         
-    
   <script>
     $('#toggle').click(function () {
       $(this).toggleClass('active');
       $('#overlay').toggleClass('open');
     });
   </script>
-
+  <script>
+    $('.loading1').delay(2000).fadeOut('slow');
+  </script>
 </body>
 
 </html>

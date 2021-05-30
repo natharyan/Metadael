@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans);
 
 
 h1 {
@@ -90,7 +90,7 @@ h1 {
 
 .overlay1:before {
   content: '';
-  background: white;
+  background: #B1CABB;
   left: -55%;
   top: 0;
   width: 50%;
@@ -102,7 +102,7 @@ h1 {
 
 .overlay1:after {
   content: '';
-  background: white;
+  background: #B1CABB;
   right: -55%;
   top: 0;
   width: 50%;
@@ -155,7 +155,7 @@ h1 {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 50px;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Bubblegum Sans', cursive;
   font-weight: 400;
   text-align: center;
   z-index: 100;

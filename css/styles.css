@@ -6,8 +6,20 @@ body{
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  background-color: #B1CABB;
+  background-color: #e4717a;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
+@keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
 
 .link-effect::after{
   content:'';
@@ -25,6 +37,16 @@ body{
 }
 .anim-inner {
   animation: text-clip 2.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+  font-family: 'Acme', sans-serif;
+  position: relative;
+  font-size: clamp(50px, 15vw, 100px);
+  text-align: center;
+  color: white;
+  top: 180px;
+  z-index: 2;
+  -webkit-user-select: none;
+}
+.anim-inner1 {
   font-family: 'Acme', sans-serif;
   position: relative;
   font-size: clamp(50px, 15vw, 100px);
@@ -136,4 +158,18 @@ img.vert-move {
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
+}
+
+.loading1 {
+  width: 100%;
+  height:100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url('images/metadael_favicon.png');
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  background-attachment: fixed;
+  background-position: center center;
+  z-index: 99;
 }
