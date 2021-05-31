@@ -1,171 +1,140 @@
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500');
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100%;
+    min-height: 100%;
+}
+  /**********/
+ /* Slider */
+/**********/
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+.slider {
+    background-color: #fff;
+    box-shadow: inset 0 0 2px hsla(0,0%,0%,.2),
+                0 3px 1px hsla(0,0%,100%,.75),
+                0 -1px 1px 2px hsla(0,0%,0%,.1);
+    height: 18.75em;
+    left: 50%;
+    margin: -9.875em -13em;
+    padding: .5em;
+    position: absolute;
+    top: 50%;
+    width: 25em;
 }
 
-.card {
-  /* Remove this for use */
-  position: relative;
-  left: 50% ;
-  transform: translateX(-50%);
+/* Frame */
+
+.slider:before {
+    background-color: #22130c;
+    bottom: -2.5em;
+    box-shadow: inset 0 1px 1px 1px hsla(0,0%,100%,.2),
+                inset 0 -2px 1px hsla(0,0%,0%,.4),
+                0 5px 50px hsla(0,0%,0%,.25),
+                0 20px 20px -15px hsla(0,0%,0%,.2),
+                0 30px 20px -15px hsla(0,0%,0%,.15),
+                0 40px 20px -15px hsla(0,0%,0%,.1);
+    content: '';
+    left: -2.5em;
+    position: absolute;
+    right: -2.5em;
+    top: -2.5em;
+    z-index: -1;
 }
 
-.card {
-  display: block;
-  position: relative;
-  width: 500px;
-  height: 260px;
-  border-radius: 2px;
-  background: cyan;
-  overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+/* Mat */
+
+.slider:after {
+    background-color: #fff5e5;
+    bottom: -1.5em;
+    box-shadow: 0 2px 1px hsla(0,0%,100%,.2),
+                0 -1px 1px 1px hsla(0,0%,0%,.4),
+                inset 0 2px 3px 1px hsla(0,0%,0%,.2),
+                inset 0 4px 3px 1px hsla(0,0%,0%,.2),
+                inset 0 6px 3px 1px hsla(0,0%,0%,.1);
+    content: '';
+    left: -1.5em;
+    position: absolute;
+    right: -1.5em;
+    top: -1.5em;
+    z-index: -1;
 }
 
-.card .card-image {
-  display: block;
-  position: relative;
-  width: 500px;
-  height: 210px;
-  background-size: cover;
-  background-position: 50% 20%;
-  
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+/* Slides */
+
+.slider li {
+    box-shadow: 0 -1px 0 2px hsla(0,0%,0%,.03);
+    list-style:none;
+    position: absolute;
+}
+.slider input {
+    display: none;
 }
 
-.card.active .card-image {
-  background-position: 50% 50%;
+/* Navigation */
+
+.slider label {
+    background-color: #111;
+    background-image: linear-gradient(transparent, hsla(0,0%,0%,.25));
+    border: .2em solid transparent;
+    bottom: .5em;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    height: .5em;
+    left: 24em;
+    opacity: 0;
+    position: absolute;
+    transition: .25s;
+    width: .5em;
+    visibility: hidden;
+    z-index: 10;
+}
+.slider label:after {
+    border-radius: 100%;
+    bottom: -.2em;
+    box-shadow: inset 0 0 0 .2em #111,
+                inset 0 2px 2px #000,
+                0 1px 1px hsla(0,0%,100%,.25);
+    content: '';
+    left: -.2em;
+    position: absolute;
+    right: -.2em;
+    top: -.2em;
+}
+.slider:hover label {
+    opacity: 1;
+    visibility: visible;
+}
+.slider input:checked + label {
+    background-color: #fff;
+}
+.slider:hover li:nth-child(1) label {
+    left: .5em;
+}
+.slider:hover li:nth-child(2) label {
+    left: 2em;
+}
+.slider:hover li:nth-child(3) label {
+    left: 3.5em;
+}
+.slider:hover li:nth-child(4) label {
+    left: 5em;
 }
 
-.card .card-image h1 {
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
-  margin: 0;
-  padding: 0;
-  color: cyan;
-  font-weight: 300;
-  transition: all 0.4s cubic-bezier(.25,.8,.25,1);
-}
+/* Images */
 
-.card.active .card-image h1 {
-  bottom: 100px;
+.slider img {
+    height: 18.75em;
+    opacity: 0;
+    transition: .25s;
+    width: 25em;
+    vertical-align: top;
+    visibility: hidden;
 }
-
-.card .card-body {
-  position: absolute;
-  display: block;
-  bottom: -210px;
-  left: 0;
-  width: 500px;
-  height: 260px;
-  background: rgb(28, 206, 206);
-  padding: 0 15px;
-  box-sizing: border-box;
-  
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-.card.active .card-body {
-  bottom: 0;
-  overflow: scroll;
-}
-
-.card .card-body .controls {
-  display: block;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 20px;
-}
-
-.card .card-body .controls a {
-  position: relative;
-  display: block;
-  float: right;
-  height: 50px;
-  width: 50px;
-  color: #737373;
-  line-height: 50px;
-  text-align: center;
-  font-size: 20px;
-  
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-.card .card-body .controls a[data-action="drawer"] {
-  float: left;
-}
-
-.card .card-body .controls a[data-action="drawer"] i {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  
-  transition: opacity 0.32s ease, transform 0.32s ease, color 0.22s ease;
-}
-
-.card .card-body .controls a[data-action="drawer"] i.down {
-  opacity: 0;
-  transform: translateX(-50%) rotate(180deg);
-}
-
-.card.active .card-body .controls a[data-action="drawer"] i.down {
-  opacity: 1;
-  transform: translateX(-50%) rotate(0deg);
-}
-
-.card .card-body .controls a[data-action="drawer"] i.up {
-  opacity: 1;
-  transform: translateX(-50%) rotate(0deg);
-}
-
-.card.active .card-body .controls a[data-action="drawer"] i.up {
-  opacity: 0;
-  transform: translateX(-50%) rotate(180deg);
-}
-
-.card .card-body .controls a:hover {
-  color: #4183D7;
-}
-
-.card .card-body .controls a[data-action="share"]:hover {
-  color: #4183D7;
-}
-
-.card .card-body .controls a[data-action="bookmark"]:hover {
-  color: #F9BF3B;
-}
-
-.card .card-body .controls a[data-action="favorite"]:hover {
-  color: #D24D57;
-}
-
-.card .card-body h1 {
-  display: block;
-  padding: 0;
-  margin: 0 0 20px 0;
-  color: #323232;
-  font-size: 20px;
-}
-
-.card .card-body p {
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  color: #737373;
-  font-size: 16px;
-  text-align: left;
-  opacity: 0;
-  padding: 40px 0 0 0;
-  font-weight: 400;
-  
-  transition: padding 0.4s cubic-bezier(.25,.8,.25,1), opacity 0.5s cubic-bezier(.25,.8,.25,1);
-  transition-delay: 0.1s;
-}
-
-.card.active .card-body p {
-  opacity: 1;
-  padding: 0;
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
 }
