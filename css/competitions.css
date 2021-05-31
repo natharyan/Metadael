@@ -16,11 +16,9 @@ html {
                 0 3px 1px hsla(0,0%,100%,.75),
                 0 -1px 1px 2px hsla(0,0%,0%,.1);
     height: 18.75em;
-    left: 50%;
-    margin: -9.875em -13em;
+    margin: auto;
     padding: .5em;
     position: absolute;
-    top: 50%;
     width: 25em;
 }
 
@@ -82,13 +80,13 @@ html {
     border-radius: 100%;
     cursor: pointer;
     display: block;
-    height: .5em;
+    height: 1em;
     left: 24em;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     transition: .25s;
-    width: .5em;
-    visibility: hidden;
+    width: 1em;
+    visibility: visible;
     z-index: 10;
 }
 .slider label:after {
@@ -103,24 +101,21 @@ html {
     right: -.2em;
     top: -.2em;
 }
-.slider:hover label {
-    opacity: 1;
-    visibility: visible;
-}
+
 .slider input:checked + label {
     background-color: #fff;
 }
-.slider:hover li:nth-child(1) label {
+li:nth-child(1) label {
     left: .5em;
 }
-.slider:hover li:nth-child(2) label {
-    left: 2em;
+li:nth-child(2) label {
+    left: 2.2em;
 }
-.slider:hover li:nth-child(3) label {
-    left: 3.5em;
+li:nth-child(3) label {
+    left: 3.9em;
 }
-.slider:hover li:nth-child(4) label {
-    left: 5em;
+li:nth-child(4) label {
+    left: 5.4em;
 }
 
 /* Images */
