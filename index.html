@@ -22,7 +22,7 @@
   <style>
     @media screen and (min-width: 992px) {
       .move1 {
-        margin-left: 30vw;
+        margin-left: 32.5vw;
       }
 
       .move2 {
@@ -46,7 +46,7 @@
 
     @media screen and (max-width: 991px) {
       .move1 {
-        margin-left: 18vw;
+        margin-left: 20.2vw;
       }
 
       .move2 {
@@ -135,27 +135,27 @@
             </nav>
           </div>
           <nav class="navbar navbar-expand-sm navbar-light nav1"
-            style="width: 500px;border: 4px solid black;border-top: 0px solid;border-left: 0px solid;border-radius: 0px 0px 45px 0px;">
+            style="width: 500px;border: 4px solid white;border-top: 0px solid;border-left: 0px solid;border-radius: 0px 0px 45px 0px;">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mt-md-0"
               style="width: fit-content;font-size: 18px;font-family: 'Acme', sans-serif;letter-spacing: 2px;">
               <li class="nav-item" style="margin-right: 5px;">
-                <a class="nav-link link-effect" href="#" style="color: black;">Home<span
+                <a class="nav-link link-effect" href="#" style="color: white;">Home<span
                     class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item" style="margin-right: 3px;">
-                <a class="nav-link link-effect" href="#" style="color: black;">Build Resume<span
+                <a class="nav-link link-effect" href="#" style="color: white;">Build Resume<span
                     class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item" style="margin-right: 3px;">
-                <a class="nav-link link-effect" href="#" style="color: black;">Series<span
+                <a class="nav-link link-effect" href="#" style="color: white;">Series<span
                     class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item" style="margin-right: 3px;">
-                <a class="nav-link link-effect" href="#" style="color: black;">Covid-19<span
+                <a class="nav-link link-effect" href="#" style="color: white;">Covid-19<span
                     class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item" style="margin-right: 3px;">
-                <a class="nav-link link-effect" href="#" style="color: black;">About<span
+                <a class="nav-link link-effect" href="#" style="color: white;">About<span
                     class="sr-only">(current)</span></a>
               </li>
 
@@ -163,13 +163,17 @@
 
           </nav>
 
-          <div class="container-fluid" style="height: 100vh;width:100vw;background: url('images/Metadael1.png'),#f36772;background-repeat: no-repeat;
-                                            background-size: 400px 400px;
+          <div class="container-fluid" style="height: 100vh;width:100vw;background: url('https://source.unsplash.com/XKGKZBroImE/2100x3000');background-repeat: no-repeat;
+                                            background-size: cover;
                                             background-attachment: fixed;
-                                            background-position: center 30px;margin: 0px;justify-content: center;">
-            <h1 class="anim-inner1">METADAEL</h1>
+                                            background-position: center center;margin: 0px;justify-content: center;">
+           <div class="container" style="height: 400px;width: 400px;background: url('images/iconpink.png');background-repeat: no-repeat;
+                                        background-size: cover;
+                                        background-attachment: fixed;
+                                        background-position: center center;position: absolute;margin-left: 50%;transform: translateX(-50%);"></div>
+           <h1 class="anim-inner1" style="position: absolute;margin-left: 50%;transform: translateX(-50%);">METADAEL</h1>
 
-            <a href="all.html"><div class="scroll" style="margin: auto;"></div></a>
+            <a href="all.html" style="top:100px;position: absolute;margin-left: 50%;transform: translateX(-50%);"><div class="scroll" style="margin: auto;"></div></a>
 
             <div class="row row1" style="position: absolute;bottom: 90px;">
               <div class="col-lg-6" style="position: absolute;">
@@ -183,7 +187,6 @@
             </div>
           </div>
         </div>
-        
   <script>
     $('#toggle').click(function () {
       $(this).toggleClass('active');
@@ -191,8 +194,15 @@
     });
   </script>
   <script>
-    $('.loading1').delay(2000).fadeOut('slow');
+    $('.loading1').delay(2200).fadeOut('slow');
   </script>
+  <!--
+  <script>
+    $(window).on("load",function(){
+      $(".loading").fadeOut("slow")
+    });
+  </script>
+  -->
 </body>
 
 </html>
