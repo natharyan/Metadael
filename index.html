@@ -163,6 +163,7 @@
 
           </nav>
           <!--url('https://source.unsplash.com/XKGKZBroImE/2100x3000')-->
+          <!--USE MEDIA QUERY TO ADJUST SIZE OF LOCAL IMAGE-->
           <div class="container-fluid" style="height: 100vh;width:100vw;background: url('https://source.unsplash.com/zv3ckJKftC4/1920x1200');background-repeat: no-repeat;
                                             background-size: cover;
                                             background-attachment: fixed;
@@ -171,8 +172,11 @@
                                         background-size: cover;
                                         background-attachment: fixed;
                                         background-position: center center;position: absolute;margin-left: 50%;transform: translateX(-50%);"></div>-->
-           <h1 class="anim-inner1" style="position: absolute;margin-left: 50%;transform: translateX(-50%);color: black;background: url(images/metadaelbg.png);background-repeat: no-repeat; background-size: cover; background-attachment: fixed;background-position: center center;">METADAEL</h1>
-
+            <div>
+              <!--clamp(50px, 15vw, 100px)-->
+              <img class="metadaelbg" width="525" height="235" src="images/metadaelbg.png" style="position: absolute;margin-left: 50%;transform: translateX(-50%);top: 93px;">
+            <h1 class="anim-inner1" style="position: absolute;margin-left: 50%;transform: translateX(-50%);color: black;">METADAEL</h1>
+            </div>
             <a href="all.html" style="top:100px;position: absolute;margin-left: 50%;transform: translateX(-50%);"><div class="scroll" style="margin: auto;"></div></a>
 
             <div class="row row1" style="position: absolute;bottom: 90px;">
