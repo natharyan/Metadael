@@ -41,12 +41,12 @@ body{
   height: 2.5px;
   margin: 0px;
   background:white;
-  transition: width 0.8s;
+  transition: width 0.4s;
 }
 
 .link-effect:hover::after{
   width: 100%;
-  transition: width 0.6s;
+  transition: width 0.4s;
 }
 .anim-inner {
   animation: text-clip 2.5s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
