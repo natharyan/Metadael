@@ -65,7 +65,7 @@ body{
   font-size: clamp(50px, 15vw, 100px);
   text-align: center;
   color: white;
-  top: 180px;
+  top: 150px;
   z-index: 2;
   -webkit-user-select: none;
 }
