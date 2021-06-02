@@ -28,11 +28,11 @@ h1 {
   top: 10px;
   width: 100%;
   float: right;
-  background-color: #357c51;
+  background-color: black;
 }
 .button_container1:hover span:nth-of-type(odd) {
 
-  background-color: #357c51;
+  background-color: black;
 }
 
 .button_container1.active .top {
@@ -53,7 +53,7 @@ h1 {
 }
 
 .button_container1 span {
-  background: #fff;
+  background: black;
   border: none;
   height: 5px;
   width: 100%;
