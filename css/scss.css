@@ -180,10 +180,25 @@ h1 {
   text-decoration: none;
   overflow: hidden;
 }
-
-.overlay1 ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-  width: 100%;
+.overlay1 ul li a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
+
+@media (hover: hover) and (pointer: fine) {
+  .overlay1 ul li a:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
 
 .overlay1 ul li a:after {
   content: '';
