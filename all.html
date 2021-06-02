@@ -27,6 +27,28 @@
     min-height:100vh;
     overflow:hidden;
   }
+  .button_container1 span {
+    background: white;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
+    }
+    .button_container1:hover span:nth-of-type(2) {
+    top: 10px;
+    width: 100%;
+    float: right;
+    background-color: white;
+    }
+.button_container1:hover span:nth-of-type(odd) {
+
+  background-color: white;
+}
 </style>
 </head>
 
@@ -57,7 +79,7 @@
               <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="profile.html">Build Resume</a></li>
-                <li><a href="series.html">Series</a></li>
+                <li><a href="all.html">Browse</a></li>
                 <li><a href="covid.html">Covid-19</a></li>
                 <li><a href="#">About</a></li>
               </ul>
