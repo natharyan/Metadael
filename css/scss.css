@@ -19,11 +19,6 @@ h1 {
   transition: opacity .25s ease;
   z-index: 100;
 }
-
-.button_container1:hover {
-  opacity: .7;
-
-}
 .button_container1:hover span:nth-of-type(2) {
   top: 10px;
   width: 100%;
@@ -90,7 +85,7 @@ h1 {
 
 .overlay1:before {
   content: '';
-  background: #B1CABB;
+  background: white;
   left: -55%;
   top: 0;
   width: 50%;
@@ -102,7 +97,7 @@ h1 {
 
 .overlay1:after {
   content: '';
-  background: #B1CABB;
+  background: white;
   right: -55%;
   top: 0;
   width: 50%;
@@ -113,7 +108,6 @@ h1 {
 }
 
 .overlay1.open {
-  opacity: .9;
   visibility: visible;
   height: 100vh;
 }
