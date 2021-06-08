@@ -30,10 +30,35 @@
             width: 300px;
         }
     }
+    .button_container1 span {
+    background: white;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
+    }
+    .button_container1:hover span:nth-of-type(2) {
+    top: 10px;
+    width: 100%;
+    float: right;
+    background-color: white;
+    }
+.button_container1:hover span:nth-of-type(odd) {
+
+  background-color: white;
+}
 </style>
 </head>
 
-<body style="background-color: #f36772;">
+<body style="background: url('https://source.unsplash.com/2qoA9NQO1vc/1990x2000');background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center center;">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -58,7 +83,7 @@
                 <li><a href="profile.html">Build Resume</a></li>
                 <li><a href="all.html">Browse</a></li>
                 <li><a href="covid.html">Covid-19</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </div>
