@@ -1,14 +1,14 @@
 function changeImage(counter) {
     var images = [
-      '<i class="fas fa-blind"></i>',
-      '<i class="fas fa-blind"></i>',
-      '<i class="fas fa-blind"></i>',
-      '<i class="fas fa-blind"></i>',
-      '<i class="fas fa-blind"></i>',
-      '<i class="fas fa-blind"></i>',
-      '<i class="fas fa-blind"></i>',
-      '<i class="fas fa-blind"></i>',
-      '<i class="fas fa-blind"></i>',
+      '<i class="fab fa-studiovinari"></i>',
+      '<i class="fab fa-studiovinari"></i>',
+      '<i class="fab fa-studiovinari"></i>',
+      '<i class="fab fa-studiovinari"></i>',
+      '<i class="fab fa-studiovinari"></i>',
+      '<i class="fab fa-studiovinari"></i>',
+      '<i class="fab fa-studiovinari"></i>',
+      '<i class="fab fa-studiovinari"></i>',
+      '<i class="fab fa-studiovinari"></i>',
     ];
 
     $(".loader .image1").html("" + images[counter] + "");
