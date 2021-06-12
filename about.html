@@ -35,7 +35,16 @@
         width: 300px;
       }
       .abouth1{
-        font-size: 53px;
+        font-size: 60px;
+      }
+      .about1{
+        position: relative;
+        top: 30px;
+        margin-bottom: 30px;
+      }
+      .favicon{
+        margin-left: 50%;
+        transform: translateX(-50%);
       }
     }
     @media screen and (min-width: 462px) {
@@ -47,6 +56,9 @@
         top: 30px;
         margin-bottom: 30px;
       }
+      .favicon{
+        float: left;
+      }
     }
     @media screen and (min-width: 739px) {
       .abouth1{
@@ -56,6 +68,9 @@
         position: relative;
         top: 70px;
         margin-bottom: 60px;
+      }
+      .favicon{
+        float: left;
       }
     }
 
@@ -144,8 +159,8 @@
     .marquee {
       width: var(--marquee-width);
       height: var(--marquee-height);
-      background-color: #eee;
-      color: #eee;
+      background-color: rgba(238, 238, 238, 0);
+      color: rgba(238, 238, 238, 0);
       overflow: hidden;
       position: relative;
     }
@@ -204,7 +219,7 @@
     .marquee-content li img {
       width: 100%;
       /* height: 100%; */
-      border: 2px solid #eee;
+      border: 2px solid rgba(238, 238, 238, 0);
     }
 
     @media (max-width: 600px) {
@@ -265,8 +280,8 @@ background-position: center center;">
       <h1 class="abouth1" style="font-family: 'Acme', sans-serif;position: absolute;margin-left: 50%;transform: translateX(-50%);">About Us</h1>
     </div>
     <div class="container about1" style="background-color: white;border-radius: 15px;padding: 60px;">
-      <img src="/images/metadael_favicon.png" alt="metadaelfavicon"
-        style="width: 300px;height: 300px;border-radius: 50%;float: left;margin-bottom: 10px;">
+      <img class="favicon" src="/images/metadael_favicon.png" alt="metadaelfavicon"
+        style="width: 200px;height: 200px;border-radius: 50%;margin-bottom: 10px;">
       <br><br>
 
       <h2 style="font-size: 50px;text-align: center;font-family: 'Acme', sans-serif;">Metadael</h2>
@@ -276,12 +291,9 @@ background-position: center center;">
         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       </p>
-      <br><br><br><br>
-    </div>
-    <br><br><br><br>
-    <div class="container" style="background-color: white;border-radius: 15px;padding: 60px;">
+      <br><br><br>
       <img src="/images/icon2.png" alt="metadaelfavicon"
-        style="width: 300px;height: 300px;border-radius: 50%;float: left;">
+        style="width: 200px;height: 200px;border-radius: 50%;float: left;">
       <br><br>
       <h2 style="font-size: 50px;text-align: center;font-family: 'Acme', sans-serif;">Name</h2>
       <p style="text-align: center;font-family: 'Acme', sans-serif;">"Lorem ipsum dolor sit amet, consectetur
@@ -291,11 +303,11 @@ background-position: center center;">
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       </p>
       <br><br>
-    </div>
-    <br><br><br><br>
-    <div class="container" style="background-color: white;border-radius: 15px;padding: 60px;">
+
+    <br><br>
+ 
       <img src="/images/icon2.png" alt="metadaelfavicon"
-        style="width: 300px;height: 300px;border-radius: 50%;float: left;">
+        style="width: 200px;height: 200px;border-radius: 50%;float: left;">
       <br><br>
       <h2 style="font-size: 50px;text-align: center;font-family: 'Acme', sans-serif;">Name</h2>
       <p style="text-align: center;font-family: 'Acme', sans-serif;">"Lorem ipsum dolor sit amet, consectetur
@@ -305,11 +317,11 @@ background-position: center center;">
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       </p>
       <br><br>
-    </div>
-    <br><br><br><br>
-    <div class="container" style="background-color: white;border-radius: 15px;padding: 60px;">
+
+    <br><br>
+ 
       <img src="/images/icon2.png" alt="metadaelfavicon"
-        style="width: 300px;height: 300px;border-radius: 50%;float: left;">
+        style="width: 200px;height: 200px;border-radius: 50%;float: left;">
       <br><br>
       <h2 style="font-size: 50px;text-align: center;font-family: 'Acme', sans-serif;">Name</h2>
       <p style="text-align: center;font-family: 'Acme', sans-serif;">"Lorem ipsum dolor sit amet, consectetur
@@ -319,7 +331,6 @@ background-position: center center;">
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       </p>
       <br><br>
-    </div>
     <br><br><br><br>
     <h2 style="font-size: 50px;text-align: center;font-family: 'Acme', sans-serif;">PARTNERS</h2>
   <br>
@@ -342,6 +353,7 @@ background-position: center center;">
       </ul>
     </div>
   </div>
+</div>
     <br><br><br>
   </div>
   <!--
