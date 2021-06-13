@@ -109,7 +109,7 @@ h1 {
 
 .overlay1.open {
   visibility: visible;
-  height: 100vh;
+  height: 80vh;
 }
 
 .overlay1.open:before {
